@@ -1,8 +1,7 @@
 //___FILEHEADER___
 
 import UIKit
-import MGKit
-import MGEntity
+import AppCore
 
 final class ___FILEBASENAME___: UIViewController, Instantiatable, Injectable {
 
