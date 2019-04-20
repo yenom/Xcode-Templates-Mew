@@ -6,7 +6,7 @@ import AppCore
 public final class ___FILEBASENAME___: UIViewController, Instantiatable {
 
     // MARK: - Mew.Instantiatable
-    typealias Input = <#value#>
+    public typealias Input = <#value#>
     public typealias Environment = EnvironmentProvider
     public var environment: Environment
 

@@ -6,7 +6,7 @@ import AppCore
 public final class ___FILEBASENAME___: UIViewController, Instantiatable, Injectable {
 
     // MARK: - Mew.Instantiatable
-    typealias Input = <#value#>
+    public typealias Input = <#value#>
     public typealias Environment = EnvironmentProvider
     public var environment: Environment
 
@@ -15,7 +15,7 @@ public final class ___FILEBASENAME___: UIViewController, Instantiatable, Injecta
         didSet { updateUI() }
     }
     
-    func input(_ input: Input) {
+    public func input(_ input: Input) {
         self.input = input
     }
 

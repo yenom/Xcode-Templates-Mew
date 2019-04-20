@@ -3,32 +3,22 @@
 import UIKit
 import AppCore
 
-public final class ___FILEBASENAME___: UIViewController, Instantiatable, Injectable, Interactable {
+public final class ___FILEBASENAME___: UIViewController, Instantiatable, Emittable {
 
     // MARK: - Mew.Instantiatable
-    typealias Input = <#value#>
+    public typealias Input = <#value#>
     public typealias Environment = EnvironmentProvider
     public var environment: Environment
 
-    // MARK: - Mew.Injectable
-    private var input: Input {
-        didSet { updateUI() }
-    }
-    
-    func input(_ input: Input) {
-        self.input = input
-    }
-
     // MARK: - Mew.Emittable
-    typealias Output = <#value#>
+    public typealias Output = <#value#>
     private var handler: ((Output) -> Void)?
-    func output(_ handler: ((Output) -> Void)?) {
+    public func output(_ handler: ((Output) -> Void)?) {
         self.handler = handler
     }
 
     public init(with input: Input, environment: Environment) {
         self.environment = environment
-        self.input = input
         super.init(nibName: nil, bundle: Bundle(for: type(of: self)))
     }
 
