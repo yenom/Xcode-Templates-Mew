@@ -6,9 +6,7 @@ import AppCore
 final class ___FILEBASENAME___: UIViewController, Instantiatable {
 
     // MARK: - Mew.Instantiatable
-    struct Input {
-        let <#name#> = <#value#>
-    }
+    typealias Input = <#value#>
     typealias Environment = EnvironmentProvider
     var environment: Environment
 

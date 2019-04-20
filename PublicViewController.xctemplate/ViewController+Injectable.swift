@@ -6,19 +6,22 @@ import AppCore
 public final class ___FILEBASENAME___: UIViewController, Instantiatable, Injectable {
 
     // MARK: - Mew.Instantiatable
-    public struct Input {
-        let <#name#> = <#value#>
-    }
+    typealias Input = <#value#>
     public typealias Environment = EnvironmentProvider
     public var environment: Environment
 
     // MARK: - Mew.Injectable
-    public func input(_ input: Input) {
-        <#code#>
+    private var input: Input {
+        didSet { updateUI() }
+    }
+    
+    func input(_ input: Input) {
+        self.input = input
     }
 
     public init(with input: Input, environment: Environment) {
         self.environment = environment
+        self.input = input
         super.init(nibName: nil, bundle: Bundle(for: type(of: self)))
     }
 

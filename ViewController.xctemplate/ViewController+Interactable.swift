@@ -6,18 +6,15 @@ import AppCore
 final class ___FILEBASENAME___: UIViewController, Instantiatable, Interactable {
 
     // MARK: - Mew.Instantiatable
-    struct Input {
-        let <#name#> = <#value#>
-    }
+    typealias Input = <#value#>
     typealias Environment = EnvironmentProvider
     var environment: Environment
 
-    // MARK: - Mew.Interactable
-    struct Output {
-        let <#name#> = <#value#>
-    }
+    // MARK: - Mew.Emittable
+    typealias Output = <#value#>
+    private var handler: ((Output) -> Void)?
     func output(_ handler: ((Output) -> Void)?) {
-        <#code#>
+        self.handler = handler
     }
 
     init(with input: Input, environment: Environment) {
