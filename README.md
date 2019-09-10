@@ -1,6 +1,6 @@
 # Xcode File Templates
 
-Some quick templates for [Mew](https://github.com/mercari/Mew) in Xcode.
+Some quick templates for [Mew](https://github.com/yenom/Mew) in Xcode.
 MicroViewControllers are awesome!
 
 ## Installation

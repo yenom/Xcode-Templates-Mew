@@ -6,13 +6,13 @@ import AppCore
 final class ___FILEBASENAME___: UIViewController, Instantiatable {
 
     // MARK: - Mew.Instantiatable
-    typealias Input = <#value#>
+    typealias Input = 
     typealias Environment = EnvironmentProvider
     var environment: Environment
 
     init(with input: Input, environment: Environment) {
         self.environment = environment
-        super.init(nibName: nil, bundle: Bundle(for: type(of: self)))
+        super.init(nibName: nil, bundle: nil)
     }
 
     @available(*, unavailable)
@@ -21,13 +21,12 @@ final class ___FILEBASENAME___: UIViewController, Instantiatable {
     }
 
     // MARK: - UIViewController
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        updateUI()
+    override func loadView() {
+        self.view = UIView(frame: UIScreen.main.bounds)
     }
 
-    func updateUI() {
-        // Update UI using Model
+    override func viewDidLoad() {
+        super.viewDidLoad()
     }
 }
 

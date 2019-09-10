@@ -45,25 +45,16 @@
 				<string>ViewController with ViewModel</string>
 			</array>
 		</dict>
-		<dict>
-			<key>Identifier</key>
-			<string>ViewController Type</string>
-			<key>Required</key>
-			<true/>
-			<key>Name</key>
-			<string>ViewController Type:</string>
-			<key>Type</key>
-			<string>popup</string>
-			<key>Default</key>
-			<string>-Instantiatable</string>
-			<key>Values</key>
-			<array>
-				<string>-Instantiatable</string>
-				<string>-Instantiatable Injectable</string>
-				<string>-Instantiatable Emittable</string>
-				<string>-Instantiatable Interactable</string>
-			</array>
-		</dict>
+    <dict>
+      <key>Identifier</key>
+      <string>+ViewModel</string>
+      <key>Name</key>
+      <string>Also create a ViewModel file</string>
+      <key>Description</key>
+      <string>Whether to create a ViewModel file</string>
+      <key>Type</key>
+      <string>checkbox</string>
+    </dict>
 	</array>
 </dict>
 </plist>
